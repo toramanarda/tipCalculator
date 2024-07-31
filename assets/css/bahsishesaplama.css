@@ -1,0 +1,215 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  background-color: rgba(197, 228, 231, 1);
+  padding-bottom: 239px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.container img {
+  margin: 0 auto;
+  margin-bottom: 87px;
+  padding-top: 163px;
+}
+
+.splitter {
+  padding: 32px 32px 32px 48px;
+  width: 920px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 20px;
+  display: flex;
+  gap: 48px;
+  box-shadow: 0px 32px 43px 0px rgba(79, 166, 175, 0.2);
+}
+
+.getinform  {
+  padding-block: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.getinform h1 {
+  font-size: 16px;
+  line-height: 23.7px;
+  color: rgba(94, 122, 125, 1);
+  margin-bottom: 6px;
+}
+
+.bill input {
+  width: 379px;
+  color: rgba(0, 71, 75, 1);
+  background-color: rgba(243, 249, 250, 1);
+  border: none;
+  border-radius: 10px;
+  text-align: right;
+  padding-block: 6px;
+  padding-right: 17px;
+  font-size: 24px;
+  line-height: 35.54px;
+}
+
+.tip-select {
+  width: 379px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.tip-select button {
+  padding: 6px 14px;
+  background-color: rgba(0, 71, 75, 1);
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35.54px;
+}
+
+.tip-select button:active {
+  background-color: rgba(159, 232, 223, 1);
+  color: rgba(0, 71, 75, 1);
+  border: none;
+}
+
+.tip-select input {
+  width: 118px;
+  background-color: rgba(243, 249, 250, 1);
+  color: rgba(84, 120, 120, 1);
+  padding: 6px 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 24px;
+  line-height: 35.54px;
+}
+
+.numberofpeople input {
+  padding: 6px 17px;
+  background-image: url(/assets/img/people.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-x: 17px;
+  width: 379px;
+  color: rgba(0, 71, 75, 1);
+  background-color: rgba(243, 249, 250, 1);
+  border: none;
+  border-radius: 10px;
+  text-align: right;
+  font-size: 24px;
+  line-height: 35.54px;
+}
+
+.output {
+  padding: 40px;
+  width: 413px;
+  display: flex;
+  flex-direction: column;
+  gap: 41px;
+  background-color: rgba(0, 71, 75, 1);
+  border-radius: 20px;
+}
+
+.output h1 {
+  font-size: 16px;
+  line-height: 23.7px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.output p {
+  font-size: 13px;
+  line-height: 19.25px;
+  color: rgba(127, 157, 159, 1);
+}
+
+.output button {
+  padding: 9px 40px;
+  border-radius: 7px;
+  background-color: rgba(38, 194, 174, 1);
+  color: rgba(0, 71, 75, 1);
+  font-size: 20px;
+  line-height: 29.62px;
+  margin-top: 100px;
+  border: none;
+}
+
+.output button:active {
+  background-color: rgba(13, 104, 109, 1);
+  color: rgba(0, 71, 75, 1);
+}
+
+@media (width <= 375px) {
+  .container {
+    width: 375px;
+    padding-bottom: 0px;
+  }
+
+  .container img {
+    padding-top: 50px;
+    margin-bottom: 40px;
+  }
+
+  .splitter {
+    width: 375px;
+    padding: 32px 24px;
+    flex-direction: column;
+    border-end-end-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .bill input {
+    width: 311px;
+  }
+
+  .numberofpeople input {
+    width: 311px;
+  }
+
+  .tip-select {
+    width: 311px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tip-select input {
+    width: 147px;
+  }
+
+  .output {
+    width: 327px;
+    padding: 32px 22px 27px 24px;
+  }
+
+  .output button {
+    margin-top: 0px;
+  }
+}
+
+
